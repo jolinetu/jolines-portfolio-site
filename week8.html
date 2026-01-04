@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>More Divs and Behaviors</title>
+<style type="text/css">
+body,td,th {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	color: #F9A5DD;
+	font-size: 0.8em;
+	background-color: #B9DCF6;
+	margin-left: 50px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	letter-spacing: 0.1em;
+	
+a:link {text-decoration: none;
+	}
+	
+	
+a:visited {text-decoration: none;
+				color:#F9A5DD;
+	}
+	
+	
+a:hover {text-decoration: none;
+				color:#F083DB;
+	}
+	
+	a:active {
+		text-decoration: none;
+		color:#F9A5DD;
+		behavior: swap image;
+		
+	}
+	a:active {text-decoration: none;
+			color: #F9A5DD;
+		behavior: swap image;
+	}
+	h1,h2,h3,h4,h5,h6 {font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}	
+	h1 {font-size: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+	margin: 0px;
+	font-weight: normal;}
+	
+	#wrapper {width: 800px; 
+	}
+	
+	#rollovers {width: 180px;
+	float: left;
+	padding-top: 40px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 145px;
+	}
+	#bigpic {width: 450px;
+	float: right;
+	padding-top: 50px;
+	}
+	#circles {width: 75px;
+	margin: 10px 10px 0 10px;
+	float: left;
+	}
+	#names {width: 75px;
+	margin: 10px 10px 0 0;
+	float: right;
+	}
+	#title {width: 450px;
+	padding-top: 25px;
+	}
+	
+	}.student-circle {
+	width:75px;
+	height: 75px;
+	margin-bottom: 10px;
+	}
+	
+	}.student-name {
+	width: 75px;
+	height: 75px;
+	margin-bottom: 10px;
+	text-align: left;
+	}
+	
+	p {
+	
+	margin: 0;
+	line-height: 75px;
+	text-transform: uppercase;
+	}
+	
+	
+	}.white-type{ color:#ffffff;
+		text-align: center;
+	}
+	
+	</style>
+	<script type="text/javascript">
+	function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}	
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/stephnie-square.jpg','images/stephanie-circle.png','images/lucy-square.jpg','images/lucy-circle.png','images/lisettee-square.jpg','images/lisettee-circle.png','images/rachel-square.jpg','images/rachel-circle.png')">
+	<div id="wrapper">
+		
+	  <div id="rollovers">
+		  
+		<div id="circles">
+		  
+		  <div class="student-circle">
+			  
+			<img src="images/circle.png" alt="" width="75" height="75" id="stephanie">
+			  
+		   
+			</div>
+			 <div class="student-circle">
+			  
+			 <img src="images/circle.png" alt="" width="75" height="75" id="lucy">
+			  
+		   
+			</div>
+			 <div class="student-circle">
+			  
+			<img src="images/circle.png" alt="" width="75" height="75" id="lisettee">
+			  
+		   
+			</div>
+			 <div class="student-circle">
+			  
+			<img src="images/circle.png" alt="" width="75" height="75" id="rachel">
+			  
+		   
+			</div>
+        </div>
+		  
+     	<div id="names">
+		  
+		  <div class="student-names">
+			
+			  <p><a href="#" onmouseover="MM_swapImage('square','','images/stephnie-square.jpg',1);MM_swapImage('stephanie','','images/stephanie-circle.png',1)" onmouseout="MM_swapImgRestore()">stephanie</a></p>
+			  
+		  </div>
+			
+			<div class="student-names">
+			
+			  <p><a href="#" onmouseover="MM_swapImage('square','','images/lucy-square.jpg',1);MM_swapImage('lucy','','images/lucy-circle.png',1)" onmouseout="MM_swapImgRestore()">lucy</a></p>
+			  
+			</div>
+			
+			<div class="student-names">
+			
+			  <p><a href="#" onmouseover="MM_swapImage('square','','images/lisettee-square.jpg',1);MM_swapImage('lisettee','','images/lisettee-circle.png',1)" onmouseout="MM_swapImgRestore()">lisettee</a></p>
+			  
+			</div>
+			
+			<div class="student-names">
+			
+			  <p><a href="#" onmouseover="MM_swapImage('square','','images/rachel-square.jpg',1);MM_swapImage('rachel','','images/rachel-circle.png',1)" onmouseout="MM_swapImgRestore()">rachel</a></p>
+			  
+			</div>
+        </div>
+		  
+      </div>
+		
+		
+	  <div id="bigpic">
+	    <img src="images/stephnie-square.jpg" alt="" width="400" height="400" id="square">
+		  
+		<div id="title">
+			<h1 onclick="reloadPage()"><a href="#"><span class="white-type">COMM 380</span>: <span class="white-type">INTERACTIVE MEDIA DESIGN</span></a></h1>
+		<br>
+		<br>
+		<div align="center">
+			<p><a href="../newindex.html">Go Back To The Homepage</a></p></div>
+	    </div>
+		
+		  <script>
+		  function reloadPage() {
+			  location.reload();
+		  }
+ </script>
+		  
+ </div>
+		
+		
+</div>
+	
+</body>
+</html>
